@@ -2,5 +2,12 @@
 
 {% block content %}
 <h1>Dashboard</h1>
-<p>Welcome to the School Management System!</p>
+<p>Welcome to your dashboard! From here, you can manage students, classes, grades, and attendance.</p>
+
+<div class="dashboard-links">
+    <a href="{% url 'students' %}" class="btn btn-secondary">Manage Students</a>
+    <a href="{% url 'classes' %}" class="btn btn-secondary">Manage Classes</a>
+    <a href="{% url 'grades' %}" class="btn btn-secondary">Manage Grades</a>
+    <a href="{% url 'attendance' %}" class="btn btn-secondary">Manage Attendance</a>
+</div>
 {% endblock %}
